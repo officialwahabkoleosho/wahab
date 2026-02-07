@@ -1,0 +1,56 @@
+@media(max-width: 768px) {
+       button{ 
+            width: 40px;
+            border-radius: 50%;
+            height: 40px;
+            font-size: 25px;
+            padding-bottom: 0.2em;
+
+        }
+
+        a{
+            width: 40px;
+            border-radius: 50%;
+            height: 40px;
+            font-size: 25px;
+            padding-bottom: 0.2em;
+        }
+     
+}
+
+@media(max-width: 500px){
+     button{ 
+            width: 30px;
+            border-radius: 50%;
+            height: 30px;
+            font-size: 20px;
+            padding-bottom: 0.1em;
+
+        }
+
+        a{
+            width: 30px;
+            border-radius: 50%;
+            height: 30px;
+            font-size: 20px;
+            padding-bottom: 0.1em;
+        }
+}
+@media(max-width: 400px){
+     button{ 
+            width: 25px;
+            border-radius: 50%;
+            height: 25px;
+            font-size: 15px;
+            padding-bottom: 0.1em;
+
+        }
+
+        a{
+            width: 25px;
+            border-radius: 50%;
+            height: 25px;
+            font-size: 15px;
+            padding-bottom: 0.1em;
+        }
+}
