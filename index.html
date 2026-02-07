@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 300px;
+            padding: 1.2em 0.5em 1.2em 0.5em;
+            text-align: center;
+            border-radius: 20px;
+            outline: none;
+            border: 1px solid gray;
+            transition: border 150ms ease;
+            margin-right: 1em;
+        }
+
+        input:focus{
+            border: 2px solid rgb(97, 5, 97);
+        }
+        button{
+            width: 50px;
+            border-radius: 50%;
+            height: 50px;
+            font-size: 30px;
+            padding-bottom: 0.3em;
+            border: 1px solid rgb(197, 191, 191);
+        }
+        a{
+            width: 50px;
+            border-radius: 50%;
+            height: 50px;
+            font-size: 30px;
+            padding-bottom: 0.3em;
+            text-decoration: none;
+            color: black;
+        }
+
+        button:hover{
+            color: white;
+            background-color: rgb(97, 5, 97);
+            border: none;
+            cursor: pointer;
+        }
+        a:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="How many Courses are you offering" id="coursesdigit">
+    <button id="nxtbtn" onclick="gonext()">→</button>
+
+    <script>
+        function gonext(){
+            let num = document.getElementById("coursesdigit").value;
+            if(num > 0){
+                window.location.href = "index2.html";
+                localStorage.setItem("num", num);
+            }
+            else{
+                alert("Please enter a valid number of courses");
+            }
+        }
+    </script>
+</body>
+</html>
